@@ -21,4 +21,6 @@ optional arguments:
 
 ## Create self-signed certificate and key
 
+```
 openssl req -x509 -newkey rsa:4096 -keyout certkey.pem -out certkey.pem -sha256 -days 3650 -nodes -subj "/C=Internet/ST=StateName/L=CityName/O=CompanyName/OU=CompanySectionName/CN=CommonNameOrHostname"
+```
