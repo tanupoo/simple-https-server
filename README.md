@@ -19,3 +19,6 @@ optional arguments:
   -p PORT     specify the port number to be listened. (default: 8443)
 ```
 
+## Create self-signed certificate and key
+
+openssl req -x509 -newkey rsa:4096 -keyout privkey.pem -out cert.pem -sha256 -days 3650 -nodes -subj "/C=Internet/ST=StateName/L=CityName/O=CompanyName/OU=CompanySectionName/CN=CommonNameOrHostname"
